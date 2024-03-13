@@ -1,0 +1,157 @@
+
+/* Main Display */
+*{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.main-header{
+background-color: #364f6b;
+color: white;
+padding: 10px;
+
+text-align: center;
+
+}
+
+p{
+text-align: justify;
+}
+
+header>h1 {
+    text-align: center;
+}
+
+
+
+.main-container{
+    display: flex;
+}
+
+/* Display Style */
+
+.container-item{
+    
+    width: 100%;
+    padding: 24px;
+}
+
+.container-item>h2{
+    text-align: Left;
+}
+
+.container-result, .container-form{
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 8px;
+    padding-bottom: 24px;
+
+}
+
+.container-form{
+    text-align: left;
+    background-color: aliceblue;
+    padding: 24px;
+}
+
+.container-form>div{
+    padding: 8px;
+}
+
+.form-item{
+    height: 24px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.emoji{
+    font-size:13px;
+}
+
+button{
+    border: 0px;
+    height: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin: 6px;
+    background-color: rgb(207, 106, 106);
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+}
+
+button:hover {
+    font-weight:bolder;
+    text-decoration: underline;
+    box-shadow: black;
+    box-sizing:content-box;
+    }
+
+#calculate-button{
+    background-color: #5b7ca2;
+    color: white;
+    font-weight: 600;
+}
+
+#obesitas{
+    padding-top: 8px;
+    padding-bottom: 16px;
+    margin: 8px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+#obesitas>p{
+    text-align: center;
+    
+}
+
+label{
+    font-weight: bold;
+}
+
+/* Display Footer */
+img{
+    width: 10%;
+}
+.img-footer{
+    
+    text-align: center;
+}
+
+.img-footer>p{
+    text-align: center;
+}
+
+/* Untuk perangkat smartphone dengan lebar maksimum 480px */
+@media only screen and (max-width: 480px) {
+   
+    body {
+      font-size: 14px;
+      width: fit-content;
+      
+    }
+  
+    .container {
+      width: 100%; 
+      padding: 10px;
+      text-align: center;
+    }
+
+    .main-header{
+        width: 500px;
+        text-align: center;
+    }
+}
+  
+  /* Gaya untuk layar besar (desktop) */
+  @media only screen and (min-width: 1200px) {
+    .container-item {
+      width: 100%;
+    }
+    .main-header{
+        width: 100%;
+       
+    }
+  }

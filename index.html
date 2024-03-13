@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator BMI</title>
+
+</head>
+<body>
+    <header class="main-header">
+        <h1>Kalkulator BMI</h1>
+    </header>
+    <main>
+        <div class="main-container">
+            <!-- Form Display -->
+            <div class="container-item">
+                
+                <section>
+                    <header>
+                        <h2>Form BMI</h2>
+                </header>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
+            </section>
+
+                <section class="container-form">
+                    <div>
+                        <label for="jenis-kelamin">Jenis Kelamin</label><br/>
+                        <input type="radio"  name = "sex" id="sex-man"><label for="sex-man">Pria</label>
+                        <input type="radio" name = "sex" id="sex-woman"><label for="sex-woman">Wanita</label>
+                       
+                    </div>
+                    <div>
+                        <label  for="weight">Berat Badan (kg)</label><br/>
+                        <span class= "emoji">&#128393;</span>
+                    <input  type="number" id="weight" placeholder="Berat Badan (kg)" class="form-item">
+                    </div>
+
+                    <div>
+                        <label for="age">Usia (tahun)</label><br/>
+                        <span class= "emoji">&#128393;</span>
+                    <input type="number" placeholder="Usia (tahun)" class="form-item">
+                    </div>
+
+                    <div>
+                        
+                        <label for="height">Tinggi Badan (cm)</label><br/>
+
+                        <span class= "emoji">&#128393;</span>
+                       <input type="number" id="height"  placeholder="Tinggi Badan (cm)" class="form-item">
+                    
+                    </div>
+
+                    <div>
+                        <button onclick="calculateBmi()" type ="button" id="calculate">Hitung BMI</button>
+                        <button onclick="reset()" type="button">Reset</button>
+                    
+                    </div>
+                    
+                </section>
+                <section>
+                    <header>
+                        <h2>Keunggulan fitur</h2>
+                    </header>
+                    <p>
+                        
+                        <ol>
+                        <li>Menghitung berat badan</li>
+                        <li>Menentukan kategori berat badan ideal atau tidak</li>
+                        <li>Mempersiapkan program penurunan berat badan</li>
+                        </ol>
+                        </p>
+                        <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh
+                        mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+                        selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+
+                        <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M²</p>
+                </section>
+            </div>
+
+            <!-- Result Display -->
+            <div class="container-item">
+                <h2>Result</h2>
+                <section class="container-result">
+                    <h4>Berat Badan Lebih</h4>
+                    <h1 id="result">00.00</h1>
+                    <h4 class="comment">Anda Memiliki Berat Badan Berlebih.</h4>
+                    <button type="button">Download Hasil BMI</button>
+                </section>
+                <section>
+                    
+                        <p id="keterangan-result">Hasil BMI diantara 23 dan 25</p>
+                    
+                    <p>
+                        Anda berada dalam kategori overweight atau berat badan berlebih.
+                        Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan yang dikonsumsi dan berolahraga.
+                        Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.
+                    </p>
+                </section>
+                <section>
+                    <button type="button">Konsultasi Ahli Gizi Via Aplikasi</button>
+                    <button type="button">Registrasi Online Ahli Gizi</button>
+                </section>
+                <section>
+                    <p>
+                        BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+                    </p>
+                </section>
+                <section id="obesitas">
+                    <header>
+                        <h4>Beberapa penyakit yang berasal dari kegemukan
+                        </h4>
+                    </header>
+                    <p>
+                        Diabetes<br/>
+                        Hipertensi<br/>
+                        Sakit Jantung<br/>
+                        Osteoarthritis
+                    </p>
+                        
+                   <span>
+                    <button type="button">Konsultasi Ahli Gizi Via Aplikasi</button>
+                    <button type="button">Registrasi Online Ahli Gizi</button>
+                   </span>
+
+                </section>
+            </div>
+
+            
+        </div>
+    </main>
+    <footer>
+        <section class="img-footer">
+             <p>Download Aplikasi</p>
+            <img src="assets/play store.jpg" alt="play-store">
+            <img src="assets/app store.jpg" alt="">
+        </section>
+       
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
