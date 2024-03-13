@@ -44,6 +44,7 @@ function calculateBmi () {
 function reset() {
     document.getElementById("weight").value = "";
     document.getElementById("height").value = "";
+    document.getElementById("age").value = "";
     document.getElementById("result").innerHTML = "0";
     document.querySelector(".comment").innerHTML = "Hasil BMI diantara 0 dan Tidak Ada";
 }
