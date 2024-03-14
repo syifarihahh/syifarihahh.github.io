@@ -126,12 +126,19 @@ img{
 
 /* Untuk perangkat smartphone dengan lebar maksimum 480px */
 @media only screen and (max-width: 480px) {
-   
-    body {
-      font-size: 14px;
-      width: fit-content;
-      
+
+    .main-container{
+        flex-direction: column;
+        margin: 16px;
+
+        min-width: 450px;
+        
+       
     }
+
+    body {
+        font-size: 14px;
+      }
   
     .container {
       width: 100%; 
