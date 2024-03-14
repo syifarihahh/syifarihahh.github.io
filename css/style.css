@@ -112,6 +112,10 @@ label{
 }
 
 /* Display Footer */
+footer{
+    text-align: center;
+}
+
 img{
     width: 10%;
 }
@@ -122,6 +126,7 @@ img{
 
 .img-footer>p{
     text-align: center;
+    
 }
 
 /* Untuk perangkat smartphone dengan lebar maksimum 480px */
@@ -149,6 +154,11 @@ img{
     .main-header{
         width: 500px;
         text-align: center;
+    }
+
+    footer{
+        margin: 24px;
+        width:125%;
     }
 }
   
